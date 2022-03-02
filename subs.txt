@@ -3,6 +3,7 @@
 # Eduardo Stuart RSS subscriptions
 #
 # ----
+https://s.tuart.dev/feed.xml
 https://addyosmani.com/rss.xml
 https://apex.sh/blog/feed.rss
 https://blog.alejandrocelaya.com/feed/
