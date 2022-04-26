@@ -40,7 +40,6 @@ https://overreacted.io/rss.xml
 https://rakyll.org/index.xml
 https://rastko.tech/feed.xml
 https://rauchg.com/atom
-https://www.netlify.com/blog/index.xml
 https://kerkour.com/feed.xml
 https://jamesclear.com/feed
 https://fasterthanli.me/index.xml
