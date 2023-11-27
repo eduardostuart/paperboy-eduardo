@@ -9,7 +9,7 @@ jobs:
       - name: Deliver
         run: |
           curl -s "https://raw.githubusercontent.com/eduardostuart/paperboy/main/scripts/install.sh" | bash
-          ./paperboy deliver -vvv ${{ secrets.MAIL_TO }} ./subs.txt ./template.hbs ./template_text.hbs
+          ./paperboy deliver ${{ secrets.MAIL_TO }} ./subs.txt ./template.hbs ./template_text.hbs
         env:
           SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
