@@ -16,7 +16,6 @@ https://feed.laravel-news.com/
 https://filfreire.com/feed.xml
 https://github.blog/feed/
 https://increment.com/feed.xml
-https://instagram-engineering.com/feed
 https://jakearchibald.com/posts.rss
 https://jasonmccreary.me/feed.atom
 https://kentcdodds.com/blog/rss.xml
@@ -42,3 +41,4 @@ https://www.ncameron.org/blog/rss/
 https://blog.google/rss/
 https://blogs.microsoft.com/feed/
 https://openai.com/blog/rss/
+https://feeds.simplecast.com/gvtxUiIf
