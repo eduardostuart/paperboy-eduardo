@@ -11,7 +11,6 @@ https://braziljs.org/feed/
 https://buttondown.email/cassidoo/rss
 https://christoph-rumpel.com/feed
 https://divinglaravel.com/feed
-https://www.uber.com/en-NL/blog/amsterdam/rss/
 https://feed.laravel-news.com/
 https://filfreire.com/feed.xml
 https://github.blog/feed/
@@ -42,3 +41,6 @@ https://blog.google/rss/
 https://blogs.microsoft.com/feed/
 https://openai.com/blog/rss/
 https://feeds.simplecast.com/gvtxUiIf
+https://blog.mollie.com/feed
+https://www.fastmail.com/feed/
+https://tauri.app/blog/atom.xml
