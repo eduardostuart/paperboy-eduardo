@@ -1,47 +1,73 @@
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>RSS by email</title>
     <style type="text/css">
       @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
     </style>
   </head>
-  <body
-    style="width;100% !important; line-height: 1.4; box-sizing: border-box;font-family: 'Lato', 'Helvetica Neue', helvetica, sans-serif;font-size:16px;"
-  >
-    <div
-      style="margin-top:4px;max-height: 300px;width:100%; margin-bottom:4px;border-radius:5px;overflow:hidden;"
+  <body>
+    <table
+      width="100%"
+      cellspacing="0"
+      cellpadding="0"
+      style="font-family: 'Lato', 'Helvetica Neue', helvetica, sans-serif;"
     >
-      <img
-        src="https://source.unsplash.com/random"
-        alt=""
-        style="width:100%;height:auto;margin:0;padding:0;border:0;"
-      />
-    </div>
-    <ul
-      style="font-family: 'Lato', 'Helvetica Neue', helvetica, sans-serif;list-style:none;margin:0;padding:0;"
-    >
-      {{#each items}}
-        <li style="margin:0;padding: 0;">
-          <h3 style="font-size:20px;font-weight:700;margin-bottom:8px;"><a
-              style="text-decoration: none;color:rgb(156, 61, 27);"
-              href="{{url}}"
-            >{{title}}</a></h3>
-          <ul style="list-style: none;margin: 0;padding: 0;">
-            {{#each entries}}
-              <li
-                style="font-size:14px;margin-bottom:4px;display:flex;margin-bottom:6px;padding:0;"
+      <tr>
+        <td align="center">
+          <table width="600" cellspacing="0" cellpadding="0">
+            <tr>
+              <td
+                style="background-color: #f4f4f4; text-align: center; padding: 20px;"
               >
-                <a
-                  href="{{url}}"
-                  style="font-weight:600;color: rgb(241, 82, 24);text-decoration:none;"
-                ><span style="padding-right:10px;">•</span> {{title}}</a>
-              </li>
+                <img
+                  src="https://source.unsplash.com/random/560x200?abstract,colorful,geometric,art,code"
+                  alt="Random image from Unsplash"
+                  width="560"
+                  height="200"
+                  style="width:100%;height:auto;max-height:200px;margin:0;padding:0;border:0;"
+/>
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="background-color: #ffffff; text-align: center; padding: 30px;"
+              >
+                <h1 style="font-size: 24px; color: #333333;">Paperboy - Today's news</h1>
+              </td>
+            </tr>
+
+            {{#each items}}
+              <tr>
+                <td style="padding: 20px;background-color: #f4f4f4;border-bottom:1px solid #ece6e6;">
+                  <table cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                      <td style="padding-bottom: 2px;">
+                        <a href="{{url}}" style="text-deocration:none;color:#000;" target="_blank">
+                          <h2 style="font-size: 18px; color: #000000; margin: 15px 0 4px 0; font-weight: bold;">
+                            {{title}}
+                          </h2>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: 14px; color: #666666; line-height: 1.5;background-color: #f4f4f4;">
+                        <ul style="margin:0;padding:0;list-style:square;">
+                          {{#each entries}}
+                            <li style="margin:0; padding:0 0 4px 0;">
+                              <a href="{{url}}" style="text-decoration:none; color:#000;">{{title}}</a>
+                            </li>
+                          {{/each}}
+                        </ul>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
             {{/each}}
-          </ul>
-        </li>
-      {{/each}}
-    </ul>
+          </table>
+        </td>
+      </tr>
+    </table>
   </body>
 </html>
